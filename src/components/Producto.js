@@ -1,5 +1,5 @@
 
-const Producto = ( {id, title, price, image} ) => {
+const Producto = ( { title, price, image,description} ) => {
     return (
       
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -8,9 +8,9 @@ const Producto = ( {id, title, price, image} ) => {
       </figure>
       <div className="card-body items-center text-center">
         <h2 className="card-title">{title}</h2>
-        <p>Description</p>
+        <p className="text-sm">{description}</p>
         <div className="card-actions">
-          <button className="btn btn-primary">{price} $</button>
+          <button className="btn btn-primary text-lg">{price} $</button>
         </div>
       </div>
     </div>
