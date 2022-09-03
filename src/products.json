@@ -3,30 +3,30 @@
         "id": "1",
         "title": "Crash Bandicoot 4",
         "price": 70,
-        "URLImg": "https://i.postimg.cc/zHyByLr3/Crash-bandicoot-4.webp"
+        "img": "../../public/Crash-Bandicoot-4.jpg"
     },
     {
         "id": "2",
         "title": "CupHead",
         "price": 25,
-        "URLImg": "https://i.postimg.cc/9Mw6pYMS/cuphead.jpg"
+        "img": "https://i.postimg.cc/9Mw6pYMS/cuphead.jpg"
     },
     {
         "id": "3",
         "title": "Age Of Empires 4",
         "price": 50,
-        "URLImg": "https://i.postimg.cc/KkqjcPCd/age22.jpg"
+        "img": "https://postimg.cc/4HG4hx2C"
     },
     {
         "id": "4",
         "title": "The Last Of Us: part 1",
         "price": 100,
-        "URLImg": "https://i.postimg.cc/v4rWYKhk/The-Last-of-Us.webp"
+        "img": "https://i.postimg.cc/v4rWYKhk/The-Last-of-Us.webp"
     },
     {
         "id": "5",
         "title": "Resident Evil 2",
         "price": 40,
-        "URLImg": "https://i.postimg.cc/68JrNKrC/res2.jpg"
+        "img": "https://i.postimg.cc/68JrNKrC/res2.jpg"
     }
 ]
