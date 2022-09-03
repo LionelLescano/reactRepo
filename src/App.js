@@ -1,48 +1,39 @@
 // import logo from './logo.svg';
 import './App.css';
-
-
 import  NavBar  from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer'
-import Saludo from './components/Saludo';
-
+import Card from './components/Card'
+import Footer from './components/Footer';
 
 
 
 function App() {
 
-  // const estilos = {
-  //   backgroundColor: 'white' ,
-  //   margin: '20px' ,
-  //   padding: '40px' ,
-  //   fontSize: '20px'  
-  // }
- 
+
 
   return (
-    <div className="container">
-      
+    <div className="App">
+      <header className='App-header'>
       <NavBar/>
+      </header>
+
+      <main className='App-main'>
+
       <ItemListContainer greeting = {'Saludos'}/>
       
+      <div className='container grid gap-4 grid-cols-2 grid-rows-3'>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+      </div>
+
+      </main>
       
-      
-{/*   
-      <Saludo name ="Juan" lastname ="perez" fn ={log}>
-        <p> Este es un mensaje extra</p>
-      </Saludo>
-      <Saludo name ="Sofia" lastname ="Rodriguez" fn= {log2}/>
-      <Saludo name ="Adrian" lastname ="Perez">
-        <ul>
-        <li> Un elemento de lista</li>
-        <li> Un elemento de lista</li>
-        <li> Un elemento de lista</li>
-        <li> Un elemento de lista</li>
-        </ul>
-      </Saludo>
-      <Saludo name ="Pablo" lastname ="daniel"/> */}
-      
-      
+      <footer>
+        <Footer/>
+      </footer>
+        
     </div>
   );
 }

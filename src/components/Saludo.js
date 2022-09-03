@@ -5,7 +5,7 @@ const Saludo = ({name, lastname ,fn, children}) => {
     }
     return( 
     <>
-    <h1 > Saludos {name} {lastname}! Que deseas comprar? </h1>
+    <h1 className="text-3xl" > Saludos {name} {lastname}! Que deseas comprar? </h1>
     {children}
     </>
     )
