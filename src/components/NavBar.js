@@ -20,10 +20,10 @@ const NavBar = () => {
       </label>
       <div tabIndex="0" className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
         <div className="card-body">
-          <span className="font-bold text-lg">8 Items</span>
-          <span className="text-info">Subtotal: $999</span>
+          <span className="font-bold text-lg">Cantidad items</span>
+          <span className="text-info">Subtotal: $9999</span>
           <div className="card-actions">
-            <button className="btn btn-primary btn-block">View cart</button>
+            <button className="btn btn-primary btn-block">Carrito</button>
           </div>
         </div>
       </div>
