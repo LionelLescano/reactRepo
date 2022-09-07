@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2';
 
-const ItemCount = ({stock, initial}) => {
+const ItemCount = ({stock}) => {
   
     const alerta = () => { 
         Swal.fire({
@@ -11,7 +11,6 @@ const ItemCount = ({stock, initial}) => {
       }) }
     
     const [counter, setCounter] = useState(0);
-    initial = 1;
     const handleClick = () => {
        if (counter < stock){
         setCounter( counter + 1 ) // counter++ -> counter = counter + 1
