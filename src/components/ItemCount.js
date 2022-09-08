@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2';
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock,price}) => {
   
     const alerta = () => { 
         Swal.fire({
@@ -30,12 +30,13 @@ const ItemCount = ({stock}) => {
     return (
     <div>
           <div>
-            <strong>Stock: {stock}</strong>
+            <strong className='text-xl'>Stock: {stock}</strong>
          </div>
          <div className='flex flex-col'>
-      <button onClick={handleClick} className='btn my-5'>+</button>
-      <button onClick={handleClick2} className='btn my-5'>-</button>
-      <strong>Agregados al carrito: {counter}</strong>
+      <button onClick={handleClick} className='btn btn-success my-5 text-xl'>+</button>
+      <button onClick={handleClick2} className='btn btn-error my-5 text-xl'>-</button>
+      <strong className='text-xl'>Agregados al carrito: {counter}</strong>
+      <button className="btn no-animation text-lg my-5">{price} $</button>
       </div>
       
     </div>
