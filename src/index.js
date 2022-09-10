@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import ItemDetailContainer from './components/ItemDetailContainer';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +19,8 @@ root.render(
     <NavBar/>
       <Routes>
            
-      <Route path='/' element= {<App/>} />
+         <Route path='/' element= {<App/>} />
+         <Route path='/item/:slug' element= {<ItemDetailContainer/>} />
       
       </Routes>
 

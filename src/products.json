@@ -5,7 +5,9 @@
         "price": 70,
         "description": "Descubrimos a Crash relajándose en su isla allá por 1998. Crash Bandicoot 4: It’s About Time incluye resolución 4K y una frecuencia de fotogramas ilimitada, así que prepárate para disfrutar de la mejor experiencia 4K.",
         "img": "https://i.postimg.cc/qM5wKQ74/Crash-Bandicoot-4-Its-About-Time-2021-PC-Full-portada.jpg",
-        "stock": 4
+        "stock": 4,
+        "slug":"bandicoot",
+        "platform": "pc"
     },
     {
         "id": "2",
@@ -13,7 +15,9 @@
         "price": 25,
         "description": " La deuda con el diablo aún no está saldada y debes de competir para lograrlo en el juego Cuphead, desarrollado por Studio MDHR en una intrépida historia. Manejando un humor oscuro, el juego te plantea diferentes obstáculos y mundos completamente ajenos al nuestro con un apartado gráfico único.",
         "img": "https://i.postimg.cc/yYdnW2sL/cuphead-pc-full-portada.jpg",
-        "stock": 25
+        "stock": 25,
+        "slug":"cuphead",
+        "platform": "pc"
     },
     {
         "id": "3",
@@ -21,7 +25,9 @@
         "price": 50,
         "description": " Age of Empires IV para PC es una experiencia atractiva para los nuevos jugadores que cuenta con un sistema de tutoriales pensado para aprender lo básico de la estrategia en tiempo real y un modo historia de la campaña pensado para que no penalice demasiado a los jugadores principiantes, pero que a la vez suponga un reto para los jugadores más veteranos.",
         "img": "https://i.postimg.cc/Vs4DfzQS/Age-of-Empires-IV-2021-PC-portada.jpg",
-        "stock": 5
+        "stock": 5,
+        "slug":"empires",
+        "platform": "pc"
     },
     {
         "id": "4",
@@ -29,7 +35,9 @@
         "price": 100,
         "description": "The Last of Us es un videojuego de genero Drama, Survival Horror y Acción-Aventura en tercera persona desarrollado por Naughty Dog y publicado por Sony Interactive Entertainment. El 2 de septiembre de 2022 saldrá a la venta el remake titulado The Last of Us Parte I para PlayStation 5 y con una versión para PC sin fecha de salida actualmente.",
         "img": "https://i.postimg.cc/QdXHmZn3/THE-LAST-OF-US-PART-2-PS5.png",
-        "stock": 6
+        "stock": 6,
+        "slug":"tlou",
+        "platform": "ps5"
     },
     {
         "id": "5",
@@ -37,6 +45,8 @@
         "price": 40,
         "description": "Resident Evil 2 Remake 2019 es uno de los juegos más esperados por la comunidad gracias a sus nuevos aspectos gráficos y su terror constante. Disfruta del clásico juego ahora con nuevas texturas, gráficas, jugabilidad y perspectiva. Asimismo transitaras las instalaciones centrales de Raccoon City para descubrir que ha ocurrido allí.",
         "img": "https://i.postimg.cc/K83NDLKL/resident-evil-2-remake-2019-pc-full-espanol-portada.jpg",
-        "stock": 3
+        "stock": 3,
+        "slug":"RE2",
+        "platform": "pc"
     }
 ]

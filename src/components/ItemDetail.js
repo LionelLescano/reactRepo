@@ -1,10 +1,10 @@
-import ItemCount from "./ItemCount"
+import React from 'react'
+import ItemCount from './ItemCount'
 
-const Producto = ( { title, price, img,description,stock} ) => {
-    return (
-      
-      <div className="flex flex-col card w-96 bg-base-100 shadow-xl">
-      <figure className="px-10 pt-10">
+const ItemDetail = ({item:{id,price,title,description,img,stock}}) => {
+  return (
+    <div className="flex flex-row card w-100 bg-base-100 shadow-xl text-center">
+      <figure className="px-20 pt-20">
         <img src={img} alt="game" className="rounded-xl" />
       </figure>
       <div className="card-body items-center text-center">
@@ -15,6 +15,7 @@ const Producto = ( { title, price, img,description,stock} ) => {
         </div>
       </div>
     </div>
-    )
-  }
-  export default Producto
+  )
+}
+
+export default ItemDetail
