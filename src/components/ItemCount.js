@@ -20,12 +20,12 @@ const ItemCount = ({stock,price}) => {
        }
      }
 
-     const handleClick2 = () => {
-      if (counter > 0){
-       setCounter( counter - 1 ) // counter++ -> counter = counter + 1
-      }
+    //  const handleClick2 = () => {
+    //   if (counter > 0){
+    //    setCounter( counter - 1 ) // counter++ -> counter = counter + 1
+    //   }
     
-    }
+    // }
   
     return (
     <div>
@@ -34,7 +34,6 @@ const ItemCount = ({stock,price}) => {
          </div>
          <div className='flex flex-col'>
       <button onClick={handleClick} className='btn btn-success my-5 text-xl'>+</button>
-      <button onClick={handleClick2} className='btn btn-error my-5 text-xl'>-</button>
       <strong className='text-xl'>Agregados al carrito: {counter}</strong>
       <button className="btn no-animation text-lg my-5">{price} $</button>
       </div>

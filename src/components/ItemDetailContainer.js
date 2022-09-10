@@ -33,7 +33,7 @@ const ItemDetailContainer = () => {
   return (
 
    <div className='flex flex-col'>
-     <Link to = "/" className='flex flex-col justify-evenly'> <button className="btn btn-outline btn-error">Volver </button> </Link>
+     <Link to = "/" className=''> <button className="btn btn-outline btn-error">Volver a Inicio</button> </Link>
      <ItemDetail item = {item} className= "" />
    </div>
 
