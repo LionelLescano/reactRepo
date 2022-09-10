@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail'
 import productsJson from '../products.json';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 
@@ -26,13 +26,18 @@ const ItemDetailContainer = () => {
             setTimeout(()=>{
                 // eslint-disable-next-line eqeqeq
                 resolve(productsJson.find( p => p.slug == slug))
-            },2000);
+            },1000);
         })
        }
 
   return (
 
-    <ItemDetail item = {item} className= "" />
+   <div className='flex flex-col'>
+     <Link to = "/" className='flex flex-col justify-evenly'> <button className="btn btn-outline btn-error">Volver </button> </Link>
+     <ItemDetail item = {item} className= "" />
+   </div>
+
+    
 
     )
 }

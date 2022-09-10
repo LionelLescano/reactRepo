@@ -22,7 +22,7 @@ const ProductosContainer = () => {
           });
 
           useEffect(()=> {
-            getProducts(productsJson, 2000)
+            getProducts(productsJson, 1000)
               .then((res)=> {
               setProductos(res);
             })
