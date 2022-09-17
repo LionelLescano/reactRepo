@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import Cart from './components/Cart';
 
 
 
@@ -21,6 +22,8 @@ root.render(
            
          <Route path='/' element= {<App/>} />
          <Route path='/item/:slug' element= {<ItemDetailContainer/>} />
+         <Route path='/cart' element= {<Cart/>} />
+
       
       </Routes>
 

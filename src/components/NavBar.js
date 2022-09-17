@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 
 
 
-const NavBar = () => {
+
+
+const NavBar = ({mount}) => {
   return (
     <div className="navbar bg-base-100 flex justify-evenly p-10">
   <div className="flex-1">
@@ -23,7 +25,7 @@ const NavBar = () => {
        {/* carrito */}
       <div tabIndex="0" className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"> 
         <div className="card-body">
-          <span className="font-bold text-lg">Cantidad items</span>
+          <span className="font-bold text-lg">Items</span>
           <span className="text-info">Subtotal: $0</span>
           <div className="card-actions">
             <button className="btn btn-primary btn-block">Carrito</button>

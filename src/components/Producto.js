@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import ItemCount from "./ItemCount"
+// import ItemCount from "./ItemCount"
 
-const Producto = ( { title, price, img, description, stock, slug} ) => {
+const Producto = ( { title, img, description, slug} ) => {
     return (
       
       <div className="flex flex-col card w-96 bg-base-100 shadow-xl">
@@ -12,7 +12,8 @@ const Producto = ( { title, price, img, description, stock, slug} ) => {
         <h2 className="card-title">{title}</h2>
         <p className="text-sm">{description}</p>
         <div className="card-actions flex items-center my-4">
-          <ItemCount stock = {stock} price = {price}></ItemCount>
+          {/* <ItemCount stock = {stock} price = {price}></ItemCount> */}
+          <Link to={'/item/' + slug }> <button class="btn btn-outline btn-success"> COMPRAR </button></Link>
         </div>
       </div>
     </div>
