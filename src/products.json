@@ -48,5 +48,35 @@
         "stock": 3,
         "slug":"RE2",
         "platform": "pc"
+    },
+    {
+        "id": "6",
+        "title": "Elden Ring",
+        "price": 60,
+        "description": "es un drama épico en el que las motivaciones de cada personaje se encuentran en las Tierras Intermedias. Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.",
+        "img": "https://i.postimg.cc/tCP9dqrB/ELDEN-RING-2022-PC-Full-portada.webp",
+        "stock": 10,
+        "slug":"ELDENRING",
+        "platform": "pc"
+    },
+    {
+        "id": "7",
+        "title": "Los Sims 4",
+        "price": 30,
+        "description": "Gran estreno del famoso juego y muy esperado por todos los amantes de los juegos de simulación, Los Sims 4 nos permitirá jugar la vida como nunca antes la habíamos vivido, aquí como es normal en Los Sims, podremos controlar a nuestro personaje que tendra mas características, serán mas complejos en apareciencias , personalidades, conductas, y emociones unicas, Experimenta tu mayor potencial de creatividad sin precedentes con el potente modo Crear un Sim y diseña preciosos hogares con el modo Construir, Comparte y añade nuevo contenido de juego a tus partidas desde la galería.",
+        "img": "https://i.postimg.cc/MTcCW5N9/The-Sims-4-Digital-Deluxe-Edition-PC.webp",
+        "stock": 10,
+        "slug":"SIMS4",
+        "platform": "pc"
+    },
+    {
+        "id": "8",
+        "title": "Snow Runner",
+        "price": 45,
+        "description": "SnowRunner te pone al volante de potentes vehículos a la conquista de entornos abiertos extremos con la simulación de terreno más avanzada nunca vista. Conduce 40 vehículos de marcas como Ford, Chevrolet y Freightliner y deja tu marca en un mundo abierto salvaje. Sobreponte al barro, a las aguas torrenciales y a lagos congelados en peligrosos contratos y misiones. Expande y personaliza tu flota con montones de mejoras y accesorios, como un tubo de escape submarino para aguas profundas o cadenas para combatir la nieve.",
+        "img": "https://i.postimg.cc/15wTtftr/Snow-Runner-2020-PC-portada.webp",
+        "stock": 2,
+        "slug":"SNWRUNNER",
+        "platform": "pc"
     }
 ]

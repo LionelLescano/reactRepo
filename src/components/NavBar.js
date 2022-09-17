@@ -9,7 +9,7 @@ const NavBar = () => {
   <div className="flex-1">
 
     <Link to={'/'}  className="btn btn-ghost normal-case text-xl">ShopEcommerce</Link>
-    {/* <a className="btn btn-ghost normal-case text-xl" href='index.html'>Shop E-Commerce</a> */}
+   
   </div>
   <div className="flex justify-around">
     <div className="dropdown dropdown-end">
@@ -39,13 +39,13 @@ const NavBar = () => {
       </label>
       <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
         <li>
-          <a className="justify-between" href='##'>
-            Profile
-            <span className="badge">New</span>
-          </a>
+          <Link to ={""} className ="justify-between"> Profile
+          <span className="badge">New</span>
+          </Link>
+          
         </li>
-        <li><a href='##'>Settings</a></li>
-        <li><a href='##'>Logout</a></li>
+        <li><Link to ={""} >Settings</Link></li>
+        <li><Link to ={""} >LogOut</Link></li>
       </ul>
     </div>
   </div>
@@ -68,32 +68,3 @@ export default NavBar
 
 
 
-//  import React from 'react'
-// //  import Reactlogo from '../assets/img/logo192.png'
-// //  import { CartWidtget } from './CartWidtget'
-
-// const NavBar = () => {
- 
-
-//   return (
-
-
-
-
-  
-//     // <div classNameNameName='navBar bg-slate-900 text-zinc-200'>
-
-//     //    <a href='index.html'><img src={Reactlogo} alt='carritoreact'></img></a>
-//     //    <ul>
-//     //    <li classNameNameName={style.title} ><a href='index.html'> Inicio</a> </li>
-//     //      <li classNameNameName={style.title}  ><a href='index.html'> Donde estamos</a> </li>
-//     //      <li classNameNameName={style.title}  ><a href='index.html'> Contacto</a> </li>
-//     //    </ul>
-         
-      
-//     //      <CartWidtget/>
-//     //  </div>
-  
-// }
-
-// export default NavBar
