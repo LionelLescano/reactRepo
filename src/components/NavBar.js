@@ -6,7 +6,7 @@ import {useCartContext} from './CartContext'
 
 const NavBar = () => {
   
-  const {cart} = useCartContext()
+  const {cart,DeleteCart} = useCartContext()
 
 
   return (
@@ -37,6 +37,7 @@ const NavBar = () => {
           </span>
           <div className="card-actions">
             <Link to ={'/cart'}> <button className="btn btn-primary btn-block">Carrito</button></Link>
+            <button onClick={DeleteCart} className="btn btn-primary btn-block small">Delete All</button>
           </div>
         </div>
       </div>
