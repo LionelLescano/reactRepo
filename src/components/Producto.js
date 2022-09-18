@@ -12,8 +12,7 @@ const Producto = ( { title, img, description, slug} ) => {
         <h2 className="card-title">{title}</h2>
         <p className="text-sm">{description}</p>
         <div className="card-actions flex items-center my-4">
-          {/* <ItemCount stock = {stock} price = {price}></ItemCount> */}
-          <Link to={'/item/' + slug }> <button class="btn btn-outline btn-success"> COMPRAR </button></Link>
+          <Link to={'/item/' + slug }> <button className="btn btn-outline btn-success"> COMPRAR </button></Link>
         </div>
       </div>
     </div>

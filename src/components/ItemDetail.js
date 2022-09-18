@@ -3,7 +3,7 @@ import ItemCount from "./ItemCount"
 
 
 
-const ItemDetail = ({item:{price,title,description,img,stock}}) => {
+const ItemDetail = ({item:{price,title,description,img,id}}) => {
 
 
   return (
@@ -15,7 +15,7 @@ const ItemDetail = ({item:{price,title,description,img,stock}}) => {
         <h2 className="card-title text-xl">{title}</h2>
         <p className="text-sm">{description}</p>
         <div className="card-actions flex items-center my-4">
-        <ItemCount stock = {stock} price = {price}></ItemCount>
+        <ItemCount price = {price} id = {id}></ItemCount>
         </div>
       </div>
     </div>

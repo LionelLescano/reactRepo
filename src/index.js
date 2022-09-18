@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart';
+import { CartContextProvider } from './components/CartContext';
 
 
 
@@ -17,17 +18,19 @@ root.render(
   
 
   <BrowserRouter>
-    <NavBar/>
-      <Routes>
-           
-         <Route path='/' element= {<App/>} />
-         <Route path='/item/:slug' element= {<ItemDetailContainer/>} />
-         <Route path='/cart' element= {<Cart/>} />
-
+  <CartContextProvider>
+      <NavBar/>
       
-      </Routes>
+        <Routes>
+           
+          <Route path='/' element= {<App/>} />
+          <Route path='/item/:slug' element= {<ItemDetailContainer/>} />
+          <Route path='/cart' element= {<Cart/>} />
 
-    <Footer/>
+        </Routes>
+      
+      <Footer/>
+    </CartContextProvider>
   </BrowserRouter>
   
   // <React.StrictMode>
