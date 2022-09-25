@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
+import ProdContainer from './components/firebase/ProdContainer';
 
-import ProductosContainer from './components/ProductosContainer';
+// import ProductosContainer from './components/ProductosContainer';
 
 
 
@@ -14,8 +15,8 @@ function App() {
        <div className='App'>
 
 
-         
-         <ProductosContainer/>
+      
+         <ProdContainer></ProdContainer>
 
           
       </div>

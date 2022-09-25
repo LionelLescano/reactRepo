@@ -13,6 +13,7 @@ export const CartContextProvider = ({children})=> {
     
     const DeleteCart = () => {
         setCart([])
+        Swal.fire("Carrito eliminado")
     }
 
     const existeProd = (id) => {
