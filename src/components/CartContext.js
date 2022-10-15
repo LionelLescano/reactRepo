@@ -5,38 +5,28 @@ const CartContext = createContext([])
 
 export const useCartContext = () =>  useContext(CartContext)
 
-export const CartContextProvider = ({children})=> {
-    
-    const [cart, setCart] = useState([]);
-    
-    
-    
-    const DeleteCart = () => {
-        setCart([])
-        Swal.fire("Carrito eliminado")
-    }
+export const CartContextProvider = ({children}) => { 
 
-    const existeProd = (id) => {
-        cart.some (search => search.id === id);
-    }
+    const [productos, setProductos] = useState([])
 
-    const removeProduct = (producto) => { 
-        
-        const removeProduct = cart.filter(search => search.id !== producto.id)
-        return setCart(removeProduct)
-       
-    }
+    const existe = (producto) => {
+        productos.some((search) => search.title === producto.title);
+    };
 
-    const addProduct = (producto) =>{
-        if(existeProd(producto.id)){
-            return Swal.fire ("ya existe en la lista.")
-        }
-        const NewProduct = {...producto}
+    const agregarProducto = (producto) => {
+        if(existe(producto)) {
+            return Swal.fire("producto ya existe en carro")
+        } 
 
-        setCart([...cart, NewProduct])
-        Swal.fire ("Producto Agregado")
-        console.log(producto)
-    }
-   
-    return <CartContext.Provider value={{cart, existeProd, addProduct, removeProduct, DeleteCart}}> {children} </CartContext.Provider>
-}
+        const productoNuevo = {...producto}
+        setProductos([...producto,productoNuevo])
+    };
+
+    
+
+
+
+
+    return <CartContext.Provider value={{existe,agregarProducto}}> {children} </CartContext.Provider>
+ }
+

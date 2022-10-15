@@ -6,9 +6,14 @@ import { Link, useParams } from 'react-router-dom';
 
 
 
+
 const ItemDetailContainer = () => {
 
+       
+
     const [item, setItem] = useState({})
+
+
 
     const {slug} =useParams()
 
@@ -34,8 +39,9 @@ const ItemDetailContainer = () => {
   return (
 
    <div className='flex flex-col'>
-     <Link to = "/" className=''> <button className="btn btn-outline btn-error">Volver a Inicio</button> </Link>
+     <Link to = "/" className=''> <button className="btn btn-outline btn-error mx-5">Volver a Inicio</button> </Link>
      <ItemDetail item = {item} className= "" />
+   
    </div>
 
     

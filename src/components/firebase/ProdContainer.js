@@ -24,7 +24,7 @@ const ProdContainer = () => {
         const itemCollection = collection(db,'products')
         getDocs(itemCollection).then(snapshot => {
             setProducts(snapshot.docs.map( d =>({id: d.id , ...d.data()})))
-            console.log(snapshot.docs.map( d =>({id: d.id , ...d.data()}))) 
+        
         })
 
      }

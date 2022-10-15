@@ -26,7 +26,7 @@ const Links = () => {
   
 return (
     <div>
-        {categories.map(c => <Link key={c.id} className='mx-4' to ={`/category/${c.id}`}><button className='btn btn-success'> {c.id}</button>  </Link>)}
+        {categories.map(c => <Link key={c.id} className='mx-4' to ={`/category/${c.id}`}><button  className='btn btn-success'> {c.id} </button>  </Link>)}
     </div>
   )
 }

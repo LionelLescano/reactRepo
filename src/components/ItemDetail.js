@@ -3,7 +3,7 @@ import ItemCount from "./ItemCount"
 
 
 
-const ItemDetail = ({item:{title,price,description,img,id}}) => {
+const ItemDetail = ({item:{title,description,img,price,id}}) => {
 
 
   return (

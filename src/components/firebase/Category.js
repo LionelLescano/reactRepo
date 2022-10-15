@@ -2,10 +2,11 @@ import { collection, getDocs, getFirestore, query, where } from 'firebase/firest
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { ProdCard } from './ProdCard'
 
 const Category = () => {
 
-    const {id: catId} = useParams()
+    const {id: categoryId} = useParams()
 
     const [products, setProducts] = useState([])
 
@@ -17,8 +18,8 @@ const Category = () => {
        
             const db = getFirestore();
             const itemCollection = collection(db,'products')
-            const q = query(itemCollection, where('category', '==', 'catId'))
-            getDocs (q).then(snapshot => {
+            const que = query(itemCollection, where('category', '==', 'categoryId'))
+            getDocs (que).then(snapshot => {
                 setProducts(snapshot.docs.map( d =>({id: d.id , ...d.data()})))
             })  
         }
@@ -26,11 +27,12 @@ const Category = () => {
 
   return (
     <div>
-        <div className=''> Category: {catId}</div>
+        <div className=''> Category: {categoryId}</div>
+        
         <Link to={'/'}> <button className='btn btn-warning m-5'>  VOLVER ATRAS </button></Link>
-        
-        
-        { products.map ( p => <li key={p.id}> {p.title} </li>)}
+
+        { products.map ( p => <ProdCard key={p.id}> {p.title} </ProdCard>)}
+
     </div>
   )
 }
